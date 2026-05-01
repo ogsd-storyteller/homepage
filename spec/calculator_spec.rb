@@ -23,6 +23,10 @@ RSpec.describe Calculator do
     it '小数を加算できる' do
       expect(Calculator.add(1.5, 2.3)).to be_within(0.001).of(3.8)
     end
+
+    it '失敗テスト' do
+      expect(Calculator.add(1, 2)).to eq(4)
+    end
   end
 
   describe '.sub' do
