@@ -7,6 +7,10 @@ RSpec.describe Calculator do
       expect(Calculator.add(2, 3)).to eq(5)
     end
 
+    it '2つの正の数を加算できる2' do
+      expect(Calculator.add(2, 4)).to eq(6)
+    end
+
     it '負の数を加算できる' do
       expect(Calculator.add(-1, -2)).to eq(-3)
     end
