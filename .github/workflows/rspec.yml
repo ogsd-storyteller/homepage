@@ -2,6 +2,7 @@ name: RSpec
 
 on:
   pull_request:
+  merge_group:
 
 jobs:
   test:
@@ -16,6 +17,9 @@ jobs:
         with:
           ruby-version: '3.3'
           bundler-cache: true
+
+      - name: Wait for 60 seconds (for merge queue testing)
+        run: sleep 60
 
       - name: Run RSpec
         run: bundle exec rspec
