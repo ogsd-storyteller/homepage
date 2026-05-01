@@ -19,6 +19,10 @@ RSpec.describe Calculator do
       expect(Calculator.add(5, -3)).to eq(2)
     end
 
+    it '正の数と負の数を加算できる2' do
+      expect(Calculator.add(-1, 1)).to eq(0)
+    end
+
     it 'ゼロを加算できる' do
       expect(Calculator.add(0, 5)).to eq(5)
       expect(Calculator.add(5, 0)).to eq(5)
