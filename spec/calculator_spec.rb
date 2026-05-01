@@ -25,7 +25,7 @@ RSpec.describe Calculator do
     end
 
     it '失敗テスト' do
-      expect(Calculator.add(1, 2)).to eq(4)
+      expect(Calculator.add(1, 2)).to eq(3)
     end
   end
 
